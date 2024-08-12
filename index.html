@@ -1,0 +1,50 @@
+<!DOCTYPE html <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<html>
+
+<body>
+    <!--This form as basic HTML5 validation for required fields with having a minimum and maximum length for the input field
+    for both username and password. All input fields are also required.-->
+    <div id="html5validation">
+        <form action="index.html">
+            <label for="username">Username</label>
+            <input type="text" required name="username" id="username" minlength="5" maxlength="20">
+        </form>
+    </div>
+    <br><br>
+    <div>
+        <form>
+            <label for="emailAddress">Email</label>
+            <input type="text" required name="email">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="text" required minlength="5" maxlength="20">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <br><br><br>
+    <div id="=javascriptvalidation">
+        <form name="myform" action="index.html" onsubmit="return validateForm()" method="post">
+            <label for="Username" id="username">Username</label>
+            <input type="text" name="firstName" id="firstname" minlength="5" maxlength="20">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="requirements">
+        <P id="tooshort">&#x2715 Username is too short.</P>
+        <P id="hasi">&#x2713 Username has an I</P>
+        <p id="toolong">&#x2715 Username is too long.</p>
+        <P id="toolong">&#x2713 Username meets the requirements!</P>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
