@@ -1,0 +1,27 @@
+#username {
+    background-color: blueviolet;
+}
+
+#username:invalid {
+    background-color: blue;
+}
+
+#username:valid {
+    background-color: aqua;
+}
+
+#javadcriptValidation {
+    border-style: dotted;
+    color: aquamarine;
+    width: fit-content;
+}
+
+#reqirements {
+    margin-left:4%;
+}
+
+#html5validation {
+    border-style: groove;
+    color: pink;
+    width: fit-content;
+}
